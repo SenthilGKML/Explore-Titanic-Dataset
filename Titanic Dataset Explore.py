@@ -5,8 +5,8 @@
 
 
 import pandas as pd
-train = pd.read_csv("/Users/GSENTH13/Desktop/studies/MachineLearning/all/train.csv", index_col="PassengerId")
-test = pd.read_csv("/Users/GSENTH13/Desktop/studies/MachineLearning/all/test.csv", index_col="PassengerId")
+train = pd.read_csv("/MachineLearning/all/train.csv", index_col="PassengerId")
+test = pd.read_csv("/MachineLearning/all/test.csv", index_col="PassengerId")
 train.shape
 
 
