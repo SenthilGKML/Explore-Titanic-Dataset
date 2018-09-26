@@ -1,8 +1,7 @@
 
 # coding: utf-8
 
-# In[3]:
-
+# Importing the train and test csv Dataset
 
 import pandas as pd
 train = pd.read_csv("/MachineLearning/all/train.csv", index_col="PassengerId")
@@ -10,25 +9,19 @@ test = pd.read_csv("/MachineLearning/all/test.csv", index_col="PassengerId")
 train.shape
 
 
-# In[5]:
-
+# Verifying the train Dataset using head() method
 
 train.head()
 
 
-# In[7]:
-
+# Verifying the test Dataset using head() method
 
 test.shape
-
-
-# In[9]:
-
 
 test.head()
 
 
-# In[10]:
+# Check the output in Seaborn 
 
 
 get_ipython().run_line_magic('matplotlib', 'inline')
@@ -38,7 +31,7 @@ import matplotlib.pyplot as plt
 sns.countplot(data=train, x="Sex", hue="Survived")
 
 
-# In[11]:
+# Check the output in Pivot Table
 
 
 pd.pivot_table(train, index="Sex", values="Survived")
